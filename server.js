@@ -6,13 +6,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 const port = 3000;
-// require('dotenv').config(); // 
-// // Set storage engine for file uploads
-// const apiKey = process.env.API_KEY; // Ensure your .env file has API_KEY
-// const genAI = new GoogleGenerativeAI({
-//     apiKey: apiKey, // Proper initialization with API key
-// });
-const apiKey = 'AIzaSyCcUFeWY0BxKAZH4C1AHa9WgylQoB_2unQ';
+
+const apiKey = '';
 const genAI = new GoogleGenerativeAI(apiKey);
 
 
